@@ -8,7 +8,7 @@ Put the `feed` folder in `/site/plugins`.
 
 ## How to use it
 
-You can use this in a tempalte for a dedicated feed page or in a template controller.
+You can use this in a template for a dedicated feed page or in a template controller.
 
 ## Example usage
 
