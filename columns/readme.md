@@ -2,6 +2,8 @@
 
 This is a plugin for [Kirby](http://getkirby.com/) enables a simple syntax in Kirbytext for multi-column layouts/text.
 
+![Columns](http://f.cl.ly/items/1C1X1a1f231z1E142f1G/columns.png)
+
 ## Installation
 
 [Download the plugins repository](https://github.com/getkirby/plugins/archive/master.zip) and copy the `columns` folder to `/site/plugins` of your site.
@@ -34,7 +36,6 @@ The `++++` seperator is used to divide text into columns. You can create additio
 Add the following rules to your CSS to enable the column layout:
 
 ```css
-
 .columns {
   margin-right: -2rem;
 }
@@ -58,7 +59,6 @@ Add the following rules to your CSS to enable the column layout:
 .columns-5 .column {
   width: 20%;
 }
-
 ```
 
 Modify the gutter between columns by changing the right margin on the .columns container and the right padding on the .column
@@ -68,8 +68,6 @@ Modify the gutter between columns by changing the right margin on the .columns c
 Class names for the container and the column divs can be modified in your config:
 
 ```php
-
 c::set('columns.container', 'mycolumns');
 c::set('columns.item', 'mycolumn');
-
 ```
