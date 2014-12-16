@@ -25,6 +25,9 @@ In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum fe
 In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a.
 
 (…columns)
+```
+
+The `++++` seperator is used to divide text into columns. You can create additional columns by just adding more separators. Just make sure to provide the necessary classes for more columns in your css. With the provided css you can add up to five columns. 
 
 ## Example CSS
 
@@ -56,7 +59,7 @@ Add the following rules to your CSS to enable the column layout:
   width: 20%;
 }
 
-``
+```
 
 Modify the gutter between columns by changing the right margin on the .columns container and the right padding on the .column
 
