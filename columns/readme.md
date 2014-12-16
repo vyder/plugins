@@ -29,7 +29,22 @@ In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum fe
 (…columns)
 ```
 
-The `++++` seperator is used to divide text into columns. You can create additional columns by just adding more separators. Just make sure to provide the necessary classes for more columns in your css. With the provided css you can add up to five columns. 
+The `++++` seperator is used to divide text into columns. You can create additional columns by just adding more separators. Just make sure to provide the necessary classes for more columns in your css. With the provided css you can add up to five columns. For the opening and closing column tags you can either use the more elegant ellipsis … (Alt+. on a Mac) or three dots.
+
+```
+(columns…)
+
+(…columns)
+```
+
+or
+
+```
+(columns...)
+
+(...columns)
+```
+
 
 ## Example CSS
 
