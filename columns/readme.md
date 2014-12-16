@@ -4,7 +4,7 @@ This is a plugin for [Kirby](http://getkirby.com/) enables a simple syntax in Ki
 
 ## Installation
 
-Put the `columns` folder in `/site/plugins`.
+[Download the plugins repository](https://github.com/getkirby/plugins/archive/master.zip) and copy the `columns` folder to `/site/plugins` of your site.
 
 ## Example usage in Kirbytext
 
