@@ -8,9 +8,9 @@
  */
 kirbytext::$pre[] = function($kirbytext, $text) {
 
-  $text = preg_replace_callback('!\(columns(…|\.{3})\)(.*)\((…|\.{3})columns\)!is', function($matches) use($kirbytext) {
+  $text = preg_replace_callback('!\(columns(…|\.{3})\)([^\(…|\.{3}columns\)].*?)?\((…|\.{3})columns\)!is', function($matches) use($kirbytext) {
 
-    $columns = preg_split('!\R\+{4}\s+\R!', $matches[2]);
+    $columns = preg_split('!(\n|\r\n)\+{4}\s+(\n|\r\n)!', $matches[2]);
     $html    = array();
 
     foreach($columns as $column) {
