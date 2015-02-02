@@ -52,7 +52,7 @@ You can even change the entire format of the result:
 		'minutes' => 'Minuten',
 		'second'  => 'Sekunde',
 		'seconds' => 'Sekunden',
-		'format'  => '{minutesCount} {minutesLabel} – {secondsCount} {secondsLabel}
+		'format'  => '{minutesCount} {minutesLabel} – {secondsCount} {secondsLabel}'
 	));
 
 	?>
