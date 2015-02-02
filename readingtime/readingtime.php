@@ -45,6 +45,6 @@ function readingtime($content, $params = array()) {
 
 }
 
-field::$methods['readingtime'] = function($field, $params) {
+field::$methods['readingtime'] = function($field, $params = array()) {
   return readingtime($field->value, $params);
 };
