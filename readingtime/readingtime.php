@@ -21,8 +21,8 @@ function readingtime($content, $params = array()) {
     'second'              => 'second',
     'seconds'             => 'seconds',
     'format'              => '{minutesCount} {minutesLabel}, {secondsCount} {secondsLabel}',
-    'format-alt'          => '{secondsCount} {secondsLabel}',
-    'enable-alt-format'   => false
+    'format.alt'          => '{secondsCount} {secondsLabel}',
+    'format.alt.enable'   => false
   );
 
   $options      = array_merge($defaults, $params);
@@ -38,8 +38,8 @@ function readingtime($content, $params = array()) {
     'secondsLabel' => $secondsLabel,
   );
 
-  if ($minutesCount < 1 and $options['enable-alt-format'] === true ) {
-    $result = $options['format-alt'];
+  if ($minutesCount < 1 and $options['format.alt.enable'] === true ) {
+    $result = $options['format.alt'];
   } else {
     $result = $options['format'];
   }

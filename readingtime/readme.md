@@ -63,8 +63,8 @@ You also can enable an alternative format that hides the minute label. This come
 
     echo $page->text()->readingtime(array(
         'format' => '{minutesCount} {minutesLabel}, {secondsCount} {secondsLabel}',
-        'format-alt' => '{secondsCount} {secondsLabel}',
-        'enable-alt-format' => true
+        'format.alt' => '{secondsCount} {secondsLabel}',
+        'format.alt.enable' => true
     ));
 
     ?>
