@@ -11,16 +11,18 @@
  * <?php echo $page->text()->readingtime() ?>
  *
  * @author Roy Lodder <http://roylodder.com>, Bastian Allgeier <http://getkirby.com>
- * @version 2.0.0
+ * @version 2.0.1
  */
 function readingtime($content, $params = array()) {
 
   $defaults = array(
-    'minute'  => 'minute',
-    'minutes' => 'minutes',
-    'second'  => 'second',
-    'seconds' => 'seconds',
-    'format'  => '{minutesCount} {minutesLabel}, {secondsCount} {secondsLabel}'
+    'minute'              => 'minute',
+    'minutes'             => 'minutes',
+    'second'              => 'second',
+    'seconds'             => 'seconds',
+    'format'              => '{minutesCount} {minutesLabel}, {secondsCount} {secondsLabel}',
+    'format-alt'          => '{secondsCount} {secondsLabel}',
+    'enable-alt-format'   => true
   );
 
   $options      = array_merge($defaults, $params);
@@ -36,7 +38,12 @@ function readingtime($content, $params = array()) {
     'secondsLabel' => $secondsLabel,
   );
 
-  $result = $options['format'];
+  if ($minutesCount < 1 and $options['enable-alt-format'] === true ) {
+    $result = $options['format-alt'];
+  } else {
+    $result = $options['format'];
+  }
+
   foreach($replace as $key => $value) {
     $result = str_replace('{' . $key . '}', $value, $result);
   }
