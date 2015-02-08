@@ -11,7 +11,7 @@
  * <?php echo $page->text()->readingtime() ?>
  *
  * @author Roy Lodder <http://roylodder.com>, Bastian Allgeier <http://getkirby.com>
- * @version 2.0.1
+ * @version 2.1.0
  */
 function readingtime($content, $params = array()) {
 
@@ -22,7 +22,7 @@ function readingtime($content, $params = array()) {
     'seconds'             => 'seconds',
     'format'              => '{minutesCount} {minutesLabel}, {secondsCount} {secondsLabel}',
     'format-alt'          => '{secondsCount} {secondsLabel}',
-    'enable-alt-format'   => true
+    'enable-alt-format'   => false
   );
 
   $options      = array_merge($defaults, $params);
