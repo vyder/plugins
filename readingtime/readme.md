@@ -57,6 +57,18 @@ You can even change the entire format of the result:
 
 	?>
 
+You also can enable an alternative format that hides the minute label. This comes in handy if you have content that you can read under a minute.
+
+    <?php
+
+    echo $page->text()->readingtime(array(
+        'format' => '{minutesCount} {minutesLabel}, {secondsCount} {secondsLabel}',
+        'format.alt' => '{secondsCount} {secondsLabel}',
+        'format.alt.enable' => true
+    ));
+
+    ?>
+
 ## Authors
 
 Author: Roy Lodder <http://roylodder.com>
